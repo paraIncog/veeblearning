@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Matkade Haldamine</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Matkade Haldamine</h1>
+  <div class="paneelid">
+    <div id="matkad"></div>
+    <form id="uus-matk">
+      <h2>Lisa Matk</h2>
+      <div>
+        <label for="uus-matk-nimi">Nimi</label>
+        <input id="uus-matk-nimi">
+      </div>
+      <button onclick="addTrek()">Lisa Matk</button>
+      <a onclick="closeNewTrekPanel()" href="javascript:;">Sulge Paneel</a>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

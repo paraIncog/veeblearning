@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Matkanda</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="veebileht">
+    <div class="pais">
+      <nav>
+        <div class="vasakpaan">
+          <div>Hiking</div>
+        </div>
+        <div id="navItems" class="parem">
+        </div>
+      </nav>
+      <div id="matkad">
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+  <script>
+    // const API_URL = 'https://andrease-matkad-app.onrender.com';
+    const API_URL = 'http://localhost:10000';
+    const matkad = document.querySelector('#matkad');
+    matkad.innerHTML = 'Loading...'
+
+    async function getTreks() {
+      try {
+        const treks = await fetch(`${API_URL}/api/treks`)
+          .then((response => response.json()));
+        console.log(treks);
+        for (let trek of treks) {
+          matkad.innerHTML = `
+            <div class="matk">
+              <div class="pilt">
+                <img src="${trek.image_url}">
+              </div>
+              <div class="sisu">
+                <h3>${trek.name}</h3>
+                <div>
+                  <b>Algus: </b>
+                  <span>${trek.start_time}</span>
+                </div>
+                <div>
+                  <b>Lõpp: </b>
+                  <span>${trek.end_time}</span>
+                </div>
+                <div>
+                  <b>Hind: </b>
+                  <span>${trek.price}€</span>
+                </div>
+                <div>
+                  <a href="registreeri/${trek.id}">Registreeri matkale</a>
+                </div>
+              </div>
+            </div>
+          `
+        }
+      } catch(e) {
+        console.log(e);
+        matkad.innerHTML = 'Error, couldn\'t fetch treks';
+      }
+    }
+
+    getTreks();
+
+  </script>
+</body>
+</html>

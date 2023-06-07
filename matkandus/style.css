@@ -1,0 +1,151 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .veebileht {
+    overflow-x: clip;
+  }
+  
+  .pais {
+    height: 778px;
+    padding: 32px 76px 142px;
+    background-image: url("pildid/hills.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 200px;
+  }
+  
+  .pais > nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .pais > nav > .vasak {
+    display: flex;
+  }
+  
+  .pais > nav > .vasak > img {
+    height: 82px;
+  }
+  
+  .pais > nav > .vasak > div {
+    font-size: 33px;
+    font-weight: 800;
+    text-transform: uppercase;
+  }
+  
+  .pais > nav > .parem {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    text-transform: uppercase;
+  }
+  
+  .pais > nav > .parem > a {
+    font-weight: 700;
+    color: #000000;
+    text-decoration: none;
+    letter-spacing: 2.67px;
+  }
+  
+  .pais > .pealkirjad {
+    text-transform: uppercase;
+    letter-spacing: 0px;
+    color: #0B0B0B;
+    font-weight: 800;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .pais > .pealkirjad > img {
+    position: absolute;
+    left: 531px;
+    top: -55px;
+  }
+  
+  .pais > .pealkirjad > h4 {
+    font-size: 39.57px;
+    line-height: 42.74px;
+    margin-top: 231px;
+  }
+  
+  .pais > .pealkirjad > h3 {
+    font-size: 74.39px;
+    line-height: 42.74px;
+    margin-top: -25px;
+    position: relative;
+  }
+  
+  .pais > .pealkirjad > h3 > img {
+    position: absolute;
+    left: -39px;
+    top: -13px;
+  }
+  
+  .pais > .pealkirjad > h5 {
+    font-size: 20.83px;
+    line-height: 29.17px;
+    margin-top: -15px;
+  }
+  
+  .pais > .pealkirjad > button {
+    font-size: 12.5px;
+    line-height: 29.17px;
+    letter-spacing: 2.5px;
+    color: #FFFFFF;
+    background: #0B0B0B 0% 0% no-repeat padding-box;
+    border: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 13px 22.5px 10px;
+    z-index: 1;
+  }
+  
+  .pais > .pealkirjad > .tydruk-varjuga > .tydruk {
+    position: absolute;
+    top: -231px;
+    right: -330px;
+    border-radius: 50%;
+    width: 914px;
+    height: 914px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    z-index: -1;
+  }
+  
+  .pais > .pealkirjad > .tydruk-varjuga > img {
+    position: absolute;
+    right: -427px;
+    bottom: -411px;
+    z-index: -2;
+  }
+  
+  #matkad {
+    margin-top: 70px;
+    display: grid;
+  }
+  
+  .matk {
+    width: 300px;
+    border: 1px solid rebeccapurple;
+  }
+  
+  .matk > .pilt {
+    width: 100%;
+    height: 150px;
+  }
+  
+  .matk > .pilt > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .matk > .sisu {
+    padding: 10px;
+  }
+  
