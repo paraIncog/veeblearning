@@ -22,28 +22,28 @@ body {
     justify-content: space-between;
   }
   
-  .pais > nav > .vasak {
+  .pais > nav > .vasakpaan {
     display: flex;
   }
   
-  .pais > nav > .vasak > img {
+  .pais > nav > .vasakpaan > img {
     height: 82px;
   }
   
-  .pais > nav > .vasak > div {
+  .pais > nav > .vasakpaan > div {
     font-size: 33px;
     font-weight: 800;
     text-transform: uppercase;
   }
   
-  .pais > nav > .parem {
+  .pais > nav > .parempaan {
     display: flex;
     gap: 20px;
     align-items: center;
     text-transform: uppercase;
   }
   
-  .pais > nav > .parem > a {
+  .pais > nav > .parempaan > a {
     font-weight: 700;
     color: #000000;
     text-decoration: none;
