@@ -1,6 +1,7 @@
 {
   "name": "matkandus",
   "version": "1.0.0",
+  "homepage": "paraIncog.github.com/veeblearning",
   "description": "",
   "main": "script.js",
   "scripts": {
