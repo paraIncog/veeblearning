@@ -1,5 +1,5 @@
 // const API_URL = 'https://andrease-matkad-app.onrender.com';
-const API_URL = 'http://localhost:10000';
+const API_URL = 'http://localhost:3000';
 const matkad = document.querySelector('#matkad');
 const uusMatk = document.querySelector('#uus-matk');
 matkad.innerHTML = 'Loading...';

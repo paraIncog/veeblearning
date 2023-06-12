@@ -25,6 +25,6 @@ let navItemsList = [
   }
 ];
 
-for (let i = 0; i < navItemsList.length; i++) {
-  navItemsHtml.innerHTML += `<a href="${navItemsList[i].viide}">${navItemsList[i].pealkiri}</a>`;
+for (const element of navItemsList) {
+  navItemsHtml.innerHTML += `<a href="${element.viide}">${element.pealkiri}</a>`;
 }
