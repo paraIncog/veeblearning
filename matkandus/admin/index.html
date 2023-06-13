@@ -4,21 +4,49 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Matkade Haldamine</title>
+  <title>Matkade halduspaneel</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Matkade Haldamine</h1>
+  <h1>Matkade halduspaneel</h1>
   <div class="paneelid">
     <div id="matkad"></div>
     <form id="uus-matk">
-      <h2>Lisa Matk</h2>
+      <h2 id="matka-paneel-pealkiri">Lisa uus matk</h2>
       <div>
         <label for="uus-matk-nimi">Nimi</label>
-        <input id="uus-matk-nimi">
+        <input id="uus-matk-nimi" required>
       </div>
-      <button onclick="addTrek()">Lisa Matk</button>
-      <a onclick="closeNewTrekPanel()" href="javascript:;">Sulge Paneel</a>
+      <div>
+        <label for="uus-matk-laiuskraad">Laiuskraad</label>
+        <input id="uus-matk-laiuskraad" required>
+      </div>
+      <div>
+        <label for="uus-matk-pikkuskraad">Pikkuskraad</label>
+        <input id="uus-matk-pikkuskraad" required>
+      </div>
+      <div>
+        <label for="uus-matk-hind">Hind</label>
+        <input id="uus-matk-hind" required>
+      </div>
+      <div>
+        <label for="uus-matk-pildi-url">Pildi URL</label>
+        <input id="uus-matk-pildi-url" required>
+      </div>
+      <div>
+        <label for="uus-matk-algus">Algus aeg</label>
+        <input id="uus-matk-algus" required>
+      </div>
+      <div>
+        <label for="uus-matk-lopp">Lõpp aeg</label>
+        <input id="uus-matk-lopp" required>
+      </div>
+      <div>
+        <label for="uus-matk-kirjeldus">Kirjeldus</label>
+        <input id="uus-matk-kirjeldus" required>
+      </div>
+      <button id="lisa-matk-nupp" onclick="addTrek()">Lisa matk</button>
+      <a onclick="closeNewTrekPanel()" href="javascript:;">Sulge paneel</a>
     </form>
   </div>
   <script src="script.js"></script>
